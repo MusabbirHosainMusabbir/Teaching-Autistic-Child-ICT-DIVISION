@@ -1,0 +1,2 @@
+# Teaching-Autistic-Child-ICT-DIVISION
+Many people see teaching autistic children as an extra challenge, as many of them don’t learn in conventional ways. However, teaching an autistic child simply requires you to look at teaching in a different way. Below are some methods educators can use when teaching a child, that will help them get the most out of their education. Creating rapport and engaging the child is key.
