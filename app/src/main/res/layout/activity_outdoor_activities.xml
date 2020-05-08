@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/profilebackground"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/main.appbar"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/main.collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/profilebackground"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/main.toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin">
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    //0.2
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    //0.4
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/back_btn"
+                            android:gravity="center" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="2.5"
+                            android:gravity="center">
+
+                            <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                                android:id="@+id/name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="48dip"
+                                android:gravity="center"
+                                android:text="Outdoor activity"
+                                android:textColor="@color/title"
+                                android:textSize="14sp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    //1
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Outdoor activity list \nfor autistic child"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20dip"></TextView>
+
+                    </LinearLayout>
+                    //0.4
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titlehead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="10 Outdoor Activities For \na Autistic Child"
+                            android:textColor="@color/subtextcolor"
+                            android:textSize="16dip"></TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/imageLinearLayout"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="25dip"
+                    android:layout_height="120dp">
+
+                    <ImageView
+                        android:id="@id/imageView"
+                        android:src="@drawable/study"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Hopscotch"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist1description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Hopscotch can involve one child or a group. Use sidewalk chalk to create a hopscotch board.  You can get the complete rules and some examples of hopscotch boards here.  Each child then uses a stone or other small object to mark their place.  Hopscotch is a good activity to work both fine and gross motor skills and social skills when played in a group."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Tic-Tac-Toe"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist2description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginTop="5dip"
+                        android:layout_marginRight="25dip"
+                        android:text="We recently shared an indoor Tic-Tac-Toe idea using large objects as the Xs and Os. This outdoor version allows the occupational therapist or speech therapist to take the children outdoors. Use sidewalk chalk to draw the board and then mark the Xs and Os."
+                        android:textColor="@color/subtextcolor"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Hangman:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist3description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Traditionally played on a piece of paper, this activity helps a speech therapist incorporate many key skills they teach children with autism. Using the chalk will help develop fine and gross motor skills while the words that need to be memorized and spelled correctly will use executive skills and also incorporates language learning."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Paint with Ice Cubes:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Mix watercolor paint with water, fill ice cube trays and freeze. Once the cubes are frozen, children can use them to paint on paper or even fabric.  Achieve Beyond (@achievebeyondus) suggests this is a great activity for occupational therapists to assist children with sensory integration. (Note: be sure the watercolor paints are non-toxic.)"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Ice Block Treasure Hunt:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Another wonderful activity with ice is a treasure hunt. Freeze various objects in a large bowl of water and then allow the children to work their way through the ice using spray bottles of warm water, paint brushes, spoons or salt. This cool activity helps children with sensory integration and fine motor skills. "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Obstacle Course:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="This fun activity can be made more or less difficult depending on the child’s ability. Obstacles can be created using pool noodles, slides, stairs, play tunnels, and even sidewalk chalk. Ella Rain (autism.lovetoknow.com) recommends including activities that involve dribbling a ball, jumping and crawling.  Add an extra level of activity and learning by adding sequencing stations throughout the course."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Marching Band:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Create your own Occupational Therapy Marching Band! This activity is great for a small group of children who love to get loud.  Gather up some toy instruments or encourage the children to make some of their own out of whatever they can find.  Then take them outside and line them up to perform a marching band routine, and let them play as loud as they like."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Hide and Go Seek:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Often played indoors, this game is just as much fun outdoors.  This activity can help children remain calm while alone and work on skills associated with following rules and interacting with other children."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Follow the Leader:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="This game can work to improve social skills, as well as motor skills, in children with autism. Select one child to be the leader and have the other children line up behind the leader. The leader performs a few movements that the other children then follow. When a child doesn’t follow the leader, they sit out.  The next leader is the one child left beside the leader.  You can also make it non-competitive by selecting a leader for a specified period of time, and then switching."/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout10"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dip"
+                    android:layout_height="wrap_content">
+
+                    <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Bold
+                        android:id="@+id/foodlist10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:textSize="22sp"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Bubbles:"/>
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/foodlist4description10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="5dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_marginLeft="25dip"
+                        android:layout_marginRight="25dip"
+                        android:text="Blowing and catching bubbles helps children with sensory and joint attention difficulties. Use scented bubbles for an additional sensory stimulator.  Get creative with the bubble making tools by using various size openings for bigger or smaller bubbles."/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_anchor="@+id/main.appbar"
+            app:layout_anchorGravity="center">
+
+            //0.2
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            //0.4
+
+            //0.4
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginRight="15dp"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textSize="20dip"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:layout_weight="2.5">
+            </TextView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <com.teachingchild.teachingautisticchild.Utils.CircleImageView
+                android:id="@+id/profileImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/artwork"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="5px"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_horizontal"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1.95">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="start|center"
+                    android:orientation="vertical"
+                    android:layout_weight="1.6">
+
+                    <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Nell Hudson"
+                            android:textSize="20dip"
+                            android:textColor="@color/textcolor"
+                            android:layout_weight="2.5">
+                        </TextView>
+
+                    <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:text="2,349 XP"
+                        android:textSize="14dip"
+                        android:textColor="@color/subtextcolor"
+                        android:layout_weight="2.5">
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">TeachingAutisticChild</string>
+    <string name="login">Login</string>
+    <string name="newaccount">New Account</string>
+    <string name="resend">Resend</string>
+    <string name="skip">SKIP</string>
+    <string name="notifications">Notifications</string>
+    <string name="questions">What would you like to learn\n today? Search below</string>
+    <string name="createpassword">Create Password</string>
+    <string name="letsgetstarted">Lets Get Started</string>
+    <string name="dontrecieveacode">I did not receive a code</string>
+    <string name="login_subtext">Enter your login details to\n access your account</string>
+    <string name="email_subtext">Start by entering your email\n address below</string>
+    <string name="password_subtext">Your password must have at\n least one symbol &amp; 8 or\n more characters</string>
+    <string name="phonelogin_subtext">Enter your mobile number to\n enable 2-step verification</string>
+    <string name="notificatoins_subtext">Stay notified about new course updates,scoreboard stats and new friend follows</string>
+
+    <string name="ageandweight">Age and Weight </string>
+    <string name="ageandweight_subtext">Enter childs age and weight and get to know about daily elemnent feature of app </string>
+    <string name="subtext">Biology &amp; The Scientific Method </string>
+    <string name="studying">STUDYING</string>
+    <string name="home">Home</string>
+    <string name="courses">Courses</string>
+    <string name="profile">Profile</string>
+    <string name="head">Food List Doctor Advice\n And Scientific method</string>
+    <string name="subtextcourse">A biology investigation usually starts with an observation—that is, something that catches the biologist’s attention. For instance, a cancer biologist might notice that a certain kind of cancer can\'t be treated with chemotherapy and wonder why this is the case. A marine ecologist, seeing that the coral reefs of her field sites are bleaching—turning white—might set out to understand why.</string>
+    <string name="study_sub">At the core of biology and other sciences lies a problem-solving approach called the scientific method. The scientific method has five basic steps, plus one feedback step:</string>
+    <string name="subtxt">Let\'s build some intuition for the scientific method by applying its steps to a practical problem from everyday life.</string>
+
+    <string name="dummy">Let\'s suppose that you get two slices of bread, put them into the toaster, and press the button. However, your bread does not toast.</string>
+</resources>

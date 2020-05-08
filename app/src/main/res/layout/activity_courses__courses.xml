@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/coursecolor"
+    tools:context="com.teachingchild.teachingautisticchild.view.Courses_Courses" android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/main.appbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fitsSystemWindows="true"
+            android:background="@color/coursecolor">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/main.collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/coursecolor"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/main.toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin">
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                //0.3
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                //0.4
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"/>
+                    <TextView
+                        android:id="@+id/outdoorActivitites"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/all"
+                        android:gravity="center"
+                        android:layout_weight="0.786"
+                        android:text="OutDoor Activities"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02"/>
+
+                    <TextView
+                        android:id="@+id/visualcomparison"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/studying"
+                        android:gravity="center"
+                        android:layout_weight="0.786"
+                        android:text="Visual Comparison"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.02"/>
+                    <TextView
+                        android:id="@+id/speechandlanguage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/saved"
+                        android:gravity="center"
+                        android:layout_weight="0.786"
+                        android:text="Development Of Speech And Language"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleViewCourses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"/>
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bottom_dashboard"
+            android:layout_alignParentBottom="true"
+          >
+
+
+            <me.ibrahimsn.lib.SmoothBottomBar
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:textColor="@color/textcolor"
+                app:textSize="14sp"
+                app:iconSize="24dp"
+                app:sideMargins="10dp"
+                app:itemPadding="8dp"
+                app:iconTint="@color/textcolor"
+                app:iconTintActive="#5468FF"
+                app:indicatorRadius="25dp"
+                app:menu="@menu/menu_bottom"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:background="@drawable/base"
+    android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/base"
+        android:weightSum="3.0"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:layout_height="0dp">
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="horizontal"
+            android:weightSum="3.0">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"></View>
+
+            <com.teachingchild.teachingautisticchild.Utils.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1.4"
+                android:orientation="vertical">
+
+                <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                    android:id="@+id/stepcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Step-1"
+                    android:textColor="@color/subtextcolor"
+                    android:textSize="14dip"></com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular>
+
+                <TextView
+                    android:id="@+id/titlestep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="Make an"
+                    android:textColor="@color/textcolor"
+                    android:textSize="25dip"></TextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:layout_height="0dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:weightSum="3.0"
+            android:layout_weight="0.9">
+
+            <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent">
+            </View>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.2"
+                android:text="@string/dummy"
+                android:layout_marginTop="5dp"
+                android:textSize="20dip"
+                android:textColor="@color/subtextcolor">
+            </TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent">
+            </View>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <Button
+                android:id="@+id/beginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/button_background_disable"
+                android:text="BEGIN"
+                android:textColor="@color/white"
+                android:layout_marginRight="45dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

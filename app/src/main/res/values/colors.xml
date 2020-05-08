@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="textcolor">#344356</color>
+    <color name="loginbgcolor">#AAEFFF</color>
+    <color name="textcolorforget">#66344356</color>
+    <color name="signintext">#7E65FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="title">#5468FF</color>
+    <color name="coursecolor">#FEE98C</color>
+    <color name="linecolor">#D4DCE7</color>
+    <color name="linecolor1">#C5CBD3</color>
+    <color name="titlecolor">#5468FF</color>
+    <color name="profilebackground">#E5E5E5</color>
+    <color name="subtextcolor">#CC344356</color>
+    <color name="intro_description_color">#63656565</color>
+    <color name="buttoncolor">#4D7E65FF</color>
+    <color name="transparent">#00FFF7F7</color>
+    <color name="stroke_color">#6BF6F8</color>
+
+</resources>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:background="@color/loginbgcolor"
+    android:orientation="vertical"
+    tools:context=".view.LoginActivity">
+
+    //0.1
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+    </LinearLayout>
+
+    //0.5
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="0.5"
+                android:scaleY="0.6"
+                android:background="@drawable/back_btn"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    //5.2
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="5.2">
+
+
+        //0.27
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="0.27">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"/>
+
+            <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/letsgetstarted"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+
+        //0.3
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"/>
+            <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                android:layout_width="0dp"
+                android:layout_weight="2.6"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="@string/phonelogin_subtext"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        //0.3
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_weight="1.25">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="8"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.4">
+
+                    <EditText
+                        android:id="@+id/firstdigit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rectangle"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:layout_weight="1.75"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33"/>
+                    <EditText
+                        android:id="@+id/seconddigit"
+                        android:layout_width="0dp"
+                        android:background="@drawable/rectangle"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:layout_weight="1.75"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33"/>
+                    <EditText
+                        android:id="@+id/thirddigit"
+                        android:layout_width="0dp"
+                        android:background="@drawable/rectangle"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:layout_weight="1.75"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.33"/>
+                    <EditText
+                        android:id="@+id/fourthdigit"
+                        android:layout_width="0dp"
+                        android:background="@drawable/rectangle"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:layout_weight="1.75"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.7">
+
+                <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/dontrecieveacode"/>
+
+                <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                    android:id="@+id/verifyTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/signintext"
+                    android:text="@string/resend"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        //0.25
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="0.29">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_weight="2.6"
+                android:background="@drawable/button"
+                android:layout_height="match_parent"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+
+        //0.2
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.98">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

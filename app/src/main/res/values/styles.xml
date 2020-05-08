@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/profilebackground</item>
+        <item name="colorPrimaryDark">@color/profilebackground</item>
+        <item name="colorAccent">@color/profilebackground</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbackground</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+</resources>

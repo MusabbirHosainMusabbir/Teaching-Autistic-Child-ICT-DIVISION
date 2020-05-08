@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:focusableInTouchMode="true"
+    android:background="@color/loginbgcolor"
+    android:orientation="vertical"
+    tools:context=".view.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6"
+        android:orientation="vertical">
+    //0.1
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+    </LinearLayout>
+
+    //0.5
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="0.5"
+                android:scaleY="0.6"
+                android:background="@drawable/back_btn"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    //5.4
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_weight="5.4">
+
+
+        //0.27
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_weight="0.27">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Hi"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:textSize="30sp"
+                    android:textStyle="normal" />
+                <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                   android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Atiqur"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/textcolor"
+                    android:textSize="30sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+        //0.3
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"/>
+            <com.teachingchild.teachingautisticchild.customfont.MyTextView_HK_Grotesk_Display_Regular
+                android:layout_width="0dp"
+                android:layout_weight="2.6"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:text="@string/questions"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        //2.1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_weight="2.1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.45"
+                android:layout_height="0dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/passwordEdt"
+                    android:ems="10"
+                    android:background="@drawable/round_editext"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:drawablePadding="25dp"
+                    android:hint="Search.."
+                    android:textColorHint="#d8d8d8"
+                    />
+
+                <ImageView
+                    android:id="@+id/prefix"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center"
+                    android:layout_marginRight="30dp"
+                    android:gravity="end"
+                    android:background="@drawable/searchbutton"
+                    android:paddingLeft="8dp"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:weightSum="3"
+               android:orientation="vertical"
+               android:layout_weight="1.8">
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.2"/>
+               
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.5"
+                   android:textSize="16sp"
+                   android:layout_marginLeft="25dp"
+                   android:text="@string/studying"/>
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:id="@+id/recycleView"
+                   android:orientation="horizontal"
+                   android:layout_height="0dp"
+                   android:layout_weight="2.3"/>
+
+           </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bottom_dashboard"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.33">
+
+
+            <me.ibrahimsn.lib.SmoothBottomBar
+                    android:id="@+id/bottomBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:textColor="@color/textcolor"
+                    app:textSize="14sp"
+                    app:iconSize="24dp"
+                    app:sideMargins="10dp"
+                    app:itemPadding="8dp"
+                    app:iconTint="@color/textcolor"
+                    app:iconTintActive="#5468FF"
+                    app:indicatorRadius="25dp"
+                    app:menu="@menu/menu_bottom"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
